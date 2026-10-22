@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Project</title>
+
+  <!-- Shared styling from the first page -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Additional styling for this page -->
+  <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+  <header class="site-header">
+    <a
+      class="brand"
+      href="index.html"
+      aria-label="John Paulo — Home"
+    >
+      <img
+        src="images/logo.png"
+        alt="JP"
+        width="50"
+        height="50"
+      >
+    </a>
+
+    <nav class="navigation" aria-label="Main navigation">
+      <a href="index.html">
+        <img
+          src="images/home.png"
+          alt="Home"
+          width="112"
+          height="63"
+        >
+      </a>
+
+      <a href="projects.html" aria-current="page">
+        <img
+          src="images/projects.png"
+          alt="Projects"
+          width="133"
+          height="72"
+        >
+      </a>
+    </nav>
+  </header>
+
+  <main class="project-page">
+    <article class="case-study" aria-labelledby="project-title">
+      <header class="project-intro">
+        <h1 id="project-title">
+          UMAK Medical and Dental Office Mobile Application
+          (Reworked Version)
+        </h1>
+
+        <p>
+          In 2024, we had a project where I had to design a mobile
+          application for the university's clinic office. Its main
+          purpose was to give students an easier way of booking an
+          appointment with the clinic.
+        </p>
+
+        <p>
+          When I was designing it, I wanted it to be in line with
+          modern UIs, hence the modular feel and the overstacking
+          of "cards." During its initial creation, I thought my
+          design was great, but seeing it again in 2026 with a
+          different set of eyes ... it could definitely be better.
+          So I have decided to revamp the project, and apply what
+          I've learned from my internship experience.
+        </p>
+      </header>
+
+      <!-- LOG IN -->
+      <section class="project-section" aria-labelledby="login-title">
+        <h2 id="login-title">LOG IN</h2>
+
+        <div class="comparison-grid comparison-grid--login">
+          <figure class="comparison comparison--before">
+            <figcaption>BEFORE</figcaption>
+            <img
+              src="images/b/b log in.png"
+              alt="Original login screens"
+              width="625"
+              height="431"
+            >
+          </figure>
+
+          <figure class="comparison comparison--after">
+            <figcaption>AFTER</figcaption>
+            <img
+              src="images/a/a log in.png"
+              alt="Reworked login screens"
+              width="625"
+              height="431"
+            >
+          </figure>
+        </div>
+      </section>
+
+      <!-- SIGN UP -->
+      <section class="project-section" aria-labelledby="signup-title">
+        <h2 id="signup-title">SIGN UP</h2>
+
+        <figure class="comparison comparison--before">
+          <figcaption>BEFORE</figcaption>
+          <img
+            src="images/b/b sign up.png"
+            alt="Original sign-up flow"
+            width="1340"
+            height="519"
+            loading="lazy"
+          >
+        </figure>
+
+        <figure
+          class="comparison comparison--after comparison--signup"
+        >
+          <figcaption>AFTER</figcaption>
+          <img
+            src="images/a/a sign up.png"
+            alt="Reworked sign-up flow"
+            width="632"
+            height="436"
+            loading="lazy"
+          >
+        </figure>
+      </section>
+
+      <!-- FORGOT PASSWORD -->
+      <section
+        class="project-section"
+        aria-labelledby="forgot-password-title"
+      >
+        <h2 id="forgot-password-title">FORGOT PASSWORD</h2>
+
+        <div class="comparison-grid">
+          <figure class="comparison comparison--before">
+            <figcaption>BEFORE</figcaption>
+            <img
+              src="images/b/b forgot pw.png"
+              alt="Original password recovery screens"
+              width="652"
+              height="335"
+              loading="lazy"
+            >
+          </figure>
+
+          <figure class="comparison comparison--after">
+            <figcaption>AFTER</figcaption>
+            <img
+              src="images/a/a forgot pw.png"
+              alt="Reworked password recovery screens"
+              width="652"
+              height="335"
+              loading="lazy"
+            >
+          </figure>
+        </div>
+
+        <p class="project-note">
+          For the log in, sign up, and forgot password frames, I
+          only made simple changes. I was mostly concerned with
+          the position and the size of the text fields, and I
+          made the shape of the button consistent with the fields.
+        </p>
+      </section>
+
+      <!-- DASHBOARD -->
+      <section
+        class="project-section"
+        aria-labelledby="dashboard-title"
+      >
+        <h2 id="dashboard-title">DASHBOARD</h2>
+
+        <div class="comparison-grid">
+          <figure class="comparison comparison--before">
+            <figcaption>BEFORE</figcaption>
+            <img
+              src="images/b/b dashboard.png"
+              alt="Original dashboard screens"
+              width="652"
+              height="335"
+              loading="lazy"
+            >
+          </figure>
+
+          <figure class="comparison comparison--after">
+            <figcaption>AFTER</figcaption>
+            <img
+              src="images/a/a dashboard.png"
+              alt="Reworked dashboard screens"
+              width="652"
+              height="335"
+              loading="lazy"
+            >
+          </figure>
+        </div>
+
+        <p class="project-note">
+          For the dashboard I changed how each section was
+          presented. The previous one felt very "in your face,"
+          and while the colors worked in theory, it resulted in
+          it looking cluttered. So I ditched the layers of color
+          and settled for simple bold text and white rectangular
+          text boxes.
+        </p>
+      </section>
+
+      <!-- BOOKING -->
+      <section
+        class="project-section"
+        aria-labelledby="booking-title"
+      >
+        <h2 id="booking-title">BOOKING</h2>
+
+        <figure
+          class="comparison comparison--before comparison--spaced"
+        >
+          <figcaption>BEFORE</figcaption>
+
+          <div class="screenshot-stack">
+            <img
+              src="images/b/b create booking.png"
+              alt="Original appointment booking flow"
+              width="1340"
+              height="339"
+              loading="lazy"
+            >
+            <img
+              src="images/b/b create booking 2.png"
+              alt="Original appointment rescheduling flow"
+              width="1340"
+              height="339"
+              loading="lazy"
+            >
+          </div>
+        </figure>
+
+        <figure class="comparison comparison--after">
+          <figcaption>AFTER</figcaption>
+          <img
+            src="images/a/a create booking.png"
+            alt="Reworked unified appointment booking flow"
+            width="1340"
+            height="339"
+            loading="lazy"
+          >
+        </figure>
+
+        <p class="project-note project-note--flush">
+          Similar to the dashboard, I toned down the boxy feel
+          and simplified the process. On the previous one, the
+          initial booking and the rescheduling had different
+          layouts, which I streamlined by putting the entire
+          process in one frame.
+        </p>
+      </section>
+
+      <!-- USER JOURNAL -->
+      <section
+        class="project-section"
+        aria-labelledby="journal-title"
+      >
+        <h2 id="journal-title">USER JOURNAL</h2>
+
+        <figure
+          class="comparison comparison--before comparison--spaced"
+        >
+          <figcaption>BEFORE</figcaption>
+          <img
+            src="images/b/b user journal.png"
+            alt="Original user journal screens"
+            width="1339"
+            height="456"
+            loading="lazy"
+          >
+        </figure>
+
+        <figure class="comparison comparison--after">
+          <figcaption>AFTER</figcaption>
+          <img
+            src="images/a/a user journal.png"
+            alt="Reworked user journal screens"
+            width="1340"
+            height="454"
+            loading="lazy"
+          >
+        </figure>
+      </section>
+
+      <!-- USER PROFILE -->
+      <section
+        class="project-section"
+        aria-labelledby="profile-title"
+      >
+        <h2 id="profile-title">USER PROFILE</h2>
+
+        <figure
+          class="comparison comparison--before comparison--spaced"
+        >
+          <figcaption>BEFORE</figcaption>
+          <img
+            src="images/b/b user profile.png"
+            alt="Original user profile screens"
+            width="1340"
+            height="451"
+            loading="lazy"
+          >
+        </figure>
+
+        <figure class="comparison comparison--after">
+          <figcaption>AFTER</figcaption>
+
+          <div class="screenshot-stack screenshot-stack--flush">
+            <img
+              src="images/a/a user profile.png"
+              alt="Reworked user profile screens"
+              width="1340"
+              height="454"
+              loading="lazy"
+            >
+            <img
+              class="profile-detail"
+              src="images/a/a user profile 2.png"
+              alt="Additional reworked user profile screens"
+              width="902"
+              height="463"
+              loading="lazy"
+            >
+          </div>
+        </figure>
+
+      <!-- ETC -->
+      <section class="project-section" aria-labelledby="etc-title">
+        <h2 id="etc-title">ETC</h2>
+
+        <figure
+          class="comparison comparison--before comparison--spaced"
+        >
+          <figcaption>BEFORE</figcaption>
+          <img
+            src="images/b/b etc.png"
+            alt="Additional original application screens"
+            width="1340"
+            height="454"
+            loading="lazy"
+          >
+        </figure>
+
+        <figure class="comparison comparison--after">
+          <figcaption>AFTER</figcaption>
+          <img
+            src="images/a/a etc.png"
+            alt="Additional reworked application screens"
+            width="1340"
+            height="454"
+            loading="lazy"
+          >
+        </figure>
+
+        <p class="project-note">
+          By this point, you could see the pattern in which I
+          revamp each section. This is in line with the new
+          design of the dashboard and appointments page.
+          Overall, I achieved what I set out to do, which was
+          to make it less juvenile and cleaner. The cost was
+          losing color but the more efficient design and
+          more formal look took precedence.
+        </p>
+      </section>
+    </article>
+  </main>
+</body>
+</html>

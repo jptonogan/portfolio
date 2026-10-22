@@ -1,0 +1,248 @@
+/* ==========================================
+   Projects page
+   Shared styles remain in styles.css
+   ========================================== */
+
+.project-page {
+  padding: 50px 50px 92px;
+}
+
+.case-study {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+}
+
+/* Project introduction */
+
+.project-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 1320px;
+}
+
+.project-intro h1 {
+  margin: 0;
+  color: var(--blue);
+  font-family: var(--body-font);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.project-intro p {
+  margin: 0;
+  font-size: 25px;
+  line-height: 1.2;
+  text-align: justify;
+}
+
+/* Section headings */
+
+.project-section {
+  min-width: 0;
+}
+
+.project-section h2 {
+  margin: 0;
+  font-family: var(--body-font);
+  font-size: 75px;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1.2;
+}
+
+/* Before / after comparisons */
+
+.comparison {
+  min-width: 0;
+  margin: 0;
+}
+
+.comparison figcaption {
+  margin: 0;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 42px;
+}
+
+.comparison--before figcaption {
+  color: var(--turquoise);
+}
+
+.comparison--after figcaption {
+  color: var(--blue);
+}
+
+.comparison img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Password recovery and dashboard:
+   652px + 36px gap + 652px at a 1440px viewport. */
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 36px;
+}
+
+/* Login:
+   625px + 90px gap + 625px at a 1440px viewport. */
+
+.comparison-grid--login {
+  gap: 90px;
+}
+
+/* Sign-up's "after" image is narrower in the frame. */
+
+.comparison--signup {
+  width: min(100%, 632px);
+}
+
+/* Some original sections have 10px below the label. */
+
+.comparison--spaced figcaption {
+  margin-bottom: 10px;
+}
+
+/* Multiple screenshot rows */
+
+.screenshot-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.screenshot-stack--flush {
+  gap: 0;
+}
+
+.screenshot-stack .profile-detail {
+  width: min(100%, 902px);
+}
+
+/* Descriptions */
+
+.project-note {
+  margin: 0;
+  padding-block: 15px;
+  font-size: 30px;
+  line-height: 1.2;
+  text-align: justify;
+}
+
+.project-note--flush {
+  padding-block: 0;
+}
+
+.project-draft {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+/* Same tablet breakpoint as the first page */
+
+@media (max-width: 1100px) {
+  .project-page {
+    padding: 48px 30px;
+  }
+
+  .case-study {
+    gap: 40px;
+  }
+
+  .project-intro h1 {
+    font-size: 34px;
+  }
+
+  .project-intro p {
+    font-size: 21px;
+  }
+
+  .project-section h2 {
+    font-size: 58px;
+  }
+
+  .comparison-grid,
+  .comparison-grid--login {
+    gap: 30px;
+  }
+
+  .comparison figcaption {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .project-note {
+    font-size: 24px;
+  }
+}
+
+/* Same mobile breakpoint as the first page */
+
+@media (max-width: 760px) {
+  .project-page {
+    padding: 32px 20px;
+  }
+
+  .case-study {
+    gap: 32px;
+  }
+
+  .project-intro {
+    gap: 16px;
+  }
+
+  .project-intro h1 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .project-intro p {
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: left;
+  }
+
+  .project-section h2 {
+    margin-bottom: 8px;
+    font-size: clamp(28px, 7vw, 44px);
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+  }
+
+  .comparison-grid,
+  .comparison-grid--login {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .comparison figcaption {
+    font-size: 23px;
+    line-height: 32px;
+  }
+
+  /* Add separation when full-width comparisons stack. */
+  .project-section > .comparison + .comparison {
+    margin-top: 20px;
+  }
+
+  .project-note {
+    padding-block: 16px;
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: left;
+  }
+
+  .project-draft {
+    font-size: 16px;
+  }
+}
